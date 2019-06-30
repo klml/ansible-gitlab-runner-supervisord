@@ -1,0 +1,24 @@
+- name: download the latest version of Gitlab Runner
+  get_url:
+    url: https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
+    dest: /home/$USER/bin/gitlab-runner
+
+
+- name: Make it executable
+  file:
+    path: /home/$USER/bin/gitlab-runner
+    mode: u+x
+
+
+- name: Optional check runner version
+  shell: |
+   /home/$USER/bin/gitlab-runner -v
+  register: runnerversion
+
+
+- name: runner version
+  debug:
+    var: runnerversion.stdout_lines
+
+
+

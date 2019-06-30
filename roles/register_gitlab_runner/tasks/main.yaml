@@ -1,0 +1,3 @@
+- name: Register the runner
+  shell: |
+    /home/$USER/bin/gitlab-runner register -u {{ CI_SERVER_URL }} -r {{ REGISTRATION_TOKEN }} --tag-list {{ TAG_LIST }} --executor {{ EXECUTOR }} --non-interactive

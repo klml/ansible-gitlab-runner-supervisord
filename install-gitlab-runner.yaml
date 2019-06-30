@@ -3,4 +3,8 @@
   hosts: gitlabrunner
   
   roles:
-    - install
+    - download_gitlab_runner
+    - working_directory
+    #~ - register_gitlab_runner
+    - supervisord_service
+    
