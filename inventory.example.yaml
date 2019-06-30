@@ -1,0 +1,6 @@
+
+[all:vars]
+ansible_user=YOURUBERSPACENAME
+
+[gitlabrunner]
+YOUR.uber.space

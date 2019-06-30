@@ -1,0 +1,3 @@
+CI_SERVER_URL: https://gitlab.com/
+TAG_LIST: master 
+EXECUTOR: shell
