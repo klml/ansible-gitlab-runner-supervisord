@@ -18,13 +18,13 @@
     dest: /home/$USER/etc/services.d/gitlab-runner.ini
 
 
-- name: Tell supervisord to refresh its configuration and start the service
+- name: Tell supervisord to refresh its configuration
   supervisorctl:
     name: gitlab-runner
     state: present
 
 
-- name: Tell supervisord to refresh its configuration and start the service
+- name: Tell supervisord to start the service
   supervisorctl:
     name: gitlab-runner
     state: started
