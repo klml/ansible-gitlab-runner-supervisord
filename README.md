@@ -7,7 +7,7 @@ This role is based on [Gitlab Runner for uberspace](https://lab.uberspace.de/gui
 
 * using [supervisord](https://manual.uberspace.de/daemons-supervisord.html)
 * works in userspace (no root)
-
+* downloads sources from amazonaws.com, does not use a package manager (apt, yum)
 
 ## Usage
 
