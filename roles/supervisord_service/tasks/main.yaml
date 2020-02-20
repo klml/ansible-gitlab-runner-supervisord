@@ -3,19 +3,19 @@
 - name: Create a shell script that keeps the call for the runner
   copy:
     src: "{{ role_path }}/files/gitlab-runner.sh"
-    dest: /home/$USER/bin/gitlab-runner.sh
+    dest: $HOME/bin/gitlab-runner.sh
 
 
 - name: Make it executable
   file:
-    path: /home/$USER/bin/gitlab-runner.sh
+    path: $HOME/bin/gitlab-runner.sh
     mode: u+x
 
 
 - name: Create supervisord ini
   copy:
     src: "{{ role_path }}/files/gitlab-runner.ini"
-    dest: /home/$USER/etc/services.d/gitlab-runner.ini
+    dest: $HOME/etc/services.d/gitlab-runner.ini
 
 
 - name: Tell supervisord to refresh its configuration

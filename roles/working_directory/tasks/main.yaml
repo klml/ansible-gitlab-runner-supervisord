@@ -1,4 +1,4 @@
 - name: Create a working directory for the runner
   file:
-    path: /home/$USER/gitlab-runner
+    path: $HOME/gitlab-runner
     state: directory
