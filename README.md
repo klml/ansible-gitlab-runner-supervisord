@@ -15,7 +15,7 @@ Get your registration_token from https://gitlab.com/USERGROUP/PROJECT/-/settings
 
 
 ```
-ansible-playbook install.yaml -i <inventory>.yaml -e "REGISTRATION_TOKEN=MyToKeNfRoMmYGitLab"
+ansible-playbook install-ezmlm.yaml -i <inventory>.yaml -e "REGISTRATION_TOKEN=MyToKeNfRoMmYGitLab"
 ```
 
 
@@ -23,6 +23,6 @@ Optional paramter:
 
 
 ```
-ansible-playbook install.yaml -i <inventory>.yaml -e "REGISTRATION_TOKEN=MyToKeNfRoMmYGitLab" -e "CI_SERVER_URL: https://gitlab.com" -e "TAG_LIST: master" -e "EXECUTOR: shell"
+ansible-playbook install-ezmlm.yaml -i <inventory>.yaml -e "REGISTRATION_TOKEN=MyToKeNfRoMmYGitLab" -e "CI_SERVER_URL: https://gitlab.com" -e "TAG_LIST: master" -e "EXECUTOR: shell"
 
 ```
